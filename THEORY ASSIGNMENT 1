@@ -1,0 +1,135 @@
+FRONTEND – THEORY ASSIGNMENT 1
+
+Q1. Explain the HTTP Request–Response Cycle with a suitable diagram.
+
+The HTTP Request–Response Cycle is the process in which a browser asks a web server for a page or file and the server sends it back.
+
+Diagram:
+Browser (Client)  →  HTTP Request  →  Web Server
+Browser (Client)  ←  HTTP Response ←  Web Server
+
+Steps:
+1. The user enters a website address in the browser.
+2. The browser finds the server using the website's domain name.
+3. The browser sends an HTTP request to the server.
+4. The server processes the request and finds the required data.
+5. The server sends an HTTP response with a status code and content.
+6. The browser displays the page to the user.
+
+Q2. Explain the purpose and key features of these web technologies.
+
+1. HTML: HTML stands for HyperText Markup Language. It creates the structure of a webpage using headings, paragraphs, images, links and forms.
+
+2. CSS: CSS stands for Cascading Style Sheets. It is used to design webpages. It controls colors, fonts, spacing, borders and layout.
+
+3. JavaScript: JavaScript makes webpages interactive. It can handle clicks, validate forms and change webpage content.
+
+4. Bootstrap: Bootstrap is a CSS framework. It provides ready-made classes and components to create responsive webpages quickly.
+
+5. jQuery: jQuery is a JavaScript library. It makes tasks like selecting HTML elements, handling events and making animations easier.
+
+6. React.js: React.js is a JavaScript library used to build user interfaces. It uses reusable components to create webpages.
+
+Q3. What are client-side and server-side technologies? Give examples.
+
+Client-side technologies run in the user's browser. They are mainly used to create the webpage and its interactions. Examples: HTML, CSS and JavaScript.
+
+Server-side technologies run on the web server. They handle data, login, business logic and database operations. Examples: Node.js, PHP, Python and Java.
+
+Main difference: Client-side code runs in the browser, while server-side code runs on the server.
+
+Q4. What are block-level elements in HTML? Give examples.
+
+Block-level elements start on a new line and usually take the full available width of their parent element. They are used to create separate sections of a webpage.
+
+Examples:
+1. <div> – Creates a section or container.
+2. <p> – Creates a paragraph.
+3. <h1> – Creates a main heading.
+
+Q5. What are semantic HTML elements? Explain their importance with examples.
+
+Semantic elements clearly describe the meaning of their content. They make HTML easier to understand and improve accessibility and SEO.
+
+Examples:
+1. <header> – Top section of a page.
+2. <nav> – Contains navigation links.
+3. <main> – Contains the main content.
+4. <article> – Contains independent content.
+5. <footer> – Bottom section of a page.
+
+Q6. Write HTML code to create the given table.
+
+<table border="1">
+  <tr>
+    <th>Sr. No.</th>
+    <th>Name</th>
+    <th>Designation</th>
+    <th>Department</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>John</td>
+    <td>Manager</td>
+    <td>Sales</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Smith</td>
+    <td>Sr. Manager</td>
+    <td>Marketing</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Jane</td>
+    <td>Manager</td>
+    <td>HR</td>
+  </tr>
+</table>
+
+Q7. Write HTML code to create the nested list.
+
+<ul>
+  <li>River
+    <ul>
+      <li>Ganga</li>
+      <li>Yamuna</li>
+      <li>Brahmaputra</li>
+      <li>Narmada</li>
+    </ul>
+  </li>
+</ul>
+
+Q8. Explain the different types of CSS with examples.
+
+1. Inline CSS: CSS is written inside the HTML element using the style attribute.
+Example: <p style="color: red;">Hello</p>
+
+2. Internal CSS: CSS is written inside a <style> tag in the HTML head section.
+Example:
+<style>
+  p { color: blue; }
+</style>
+
+3. External CSS: CSS is written in a separate .css file and connected using a link tag.
+Example in HTML: <link rel="stylesheet" href="style.css">
+Example in style.css: p { color: green; }
+
+Q9. Differentiate between HTML, CSS and JavaScript.
+
+HTML: It gives structure to a webpage, such as headings, paragraphs, images and buttons.
+CSS: It gives style to a webpage, such as colors, fonts, spacing and layout.
+JavaScript: It adds actions and interactivity, such as button clicks and form validation.
+
+In simple words: HTML is the structure, CSS is the design and JavaScript is the behaviour.
+
+Q10. Short answers.
+
+a. What is the role of Bootstrap in web development?
+Bootstrap is a CSS framework that helps developers create responsive and mobile-friendly websites using ready-made classes and components.
+
+b. What is jQuery and why was it widely used?
+jQuery is a JavaScript library that makes HTML selection, event handling, animations and AJAX easier with shorter code. It was widely used because it simplified JavaScript and browser differences.
+
+c. What is React.js and what problem does it solve?
+React.js is a JavaScript library for building user interfaces. It helps developers create reusable components and update webpage content efficiently.
