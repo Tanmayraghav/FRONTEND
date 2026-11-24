@@ -1,0 +1,88 @@
+FRONTEND – THEORY ASSIGNMENT 4
+
+Q1. What is a closure in JavaScript? Explain with an example.
+
+A closure is created when an inner function remembers and can use variables from its outer function, even after the outer function has finished.
+
+Example:
+function outer() {
+  let count = 0;
+  return function() {
+    count++;
+    console.log(count);
+  };
+}
+
+let result = outer();
+result(); // 1
+result(); // 2
+
+Q2. What is a Promise in JavaScript? Explain its different states.
+
+A Promise is an object used to handle a result that may be available in the future, such as data from a server.
+
+It has three states:
+1. Pending – The task is still running.
+2. Fulfilled – The task completed successfully.
+3. Rejected – The task failed.
+
+Q3. What is async/await? How does it simplify Promises?
+
+async and await are used to work with Promises. They make asynchronous code easier to read.
+
+Example:
+async function getData() {
+  let response = await fetch("https://example.com");
+  let data = await response.text();
+  console.log(data);
+}
+
+The await keyword waits for the Promise result inside the async function.
+
+Q4. What is the Global Execution Context in JavaScript?
+
+The Global Execution Context is the first environment created when JavaScript code starts running. It handles global variables and functions. In a browser, the global object is window.
+
+Q5. What is currying in JavaScript? Explain with an example.
+
+Currying is a technique in which a function with multiple arguments is changed into a sequence of functions, each taking one argument.
+
+Example:
+function add(a) {
+  return function(b) {
+    return a + b;
+  };
+}
+
+console.log(add(5)(3)); // 8
+
+Q6. What is jQuery, and what is its significance in web development?
+
+jQuery is a JavaScript library that makes HTML element selection, event handling, animations and AJAX easier. It was popular because it allowed developers to write less code and handled many browser differences.
+
+Q7. What is a component in React? Explain its types.
+
+A component is a reusable part of a React user interface. For example, a button, header or form can be a component.
+
+Main types:
+1. Functional component – A JavaScript function that returns JSX.
+2. Class component – A JavaScript class that extends React.Component and returns JSX using a render method.
+
+Q8. What is the Virtual DOM? How does it improve performance?
+
+The Virtual DOM is a lightweight copy of the real DOM kept by React. When data changes, React compares the new Virtual DOM with the previous one and updates the required parts of the real DOM. This avoids unnecessary DOM updates and can improve performance.
+
+Q9. What is JSX? Why can browsers not understand it directly?
+
+JSX stands for JavaScript XML. It lets us write HTML-like code inside JavaScript when using React.
+
+Example:
+const element = <h1>Hello</h1>;
+
+Browsers do not understand JSX directly. It is converted into normal JavaScript by tools such as Babel before the browser runs it.
+
+Q10. What are props in React? Are they mutable or immutable?
+
+Props are values passed from a parent component to a child component. They help components receive data and be reused.
+
+Props are immutable from the child's point of view. A child component should not change its props directly. The parent can pass new props when its data changes.
